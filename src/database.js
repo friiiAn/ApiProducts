@@ -1,7 +1,8 @@
-import mongoose from 'mongoose';
 
-mongoose.connect("mongodb+srv://friduki:Mongo2026@cluster0.8qxuvhc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-.then(() => console.log("Connected to MongoDB"))
-.catch((error) => console.error("Error connecting to MongoDB", error));
+  import mongoose from 'mongoose';
 
-export default mongoose;
+  mongoose.connect("mongodb+srv://friduki:Mongo2026@cluster0.8qxuvhc.mongodb.net/apiProducts?appName=API")
+  .then(() => console.log("Connected to MongoDB"))
+  .catch((error) => console.error("Error connecting to MongoDB", error));
+
+  export default mongoose;
